@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михайло Денисенко</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/2795a2be43.js" crossorigin="anonymous"></script>
+    <meta name="color-scheme" content="light" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="#" data-ua="Михайло Денисенко" data-en="Mykhailo Denysenko"
+                data-ru="Михаил Денисенко">Михайло Денисенко</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-ua="Про мене" data-en="About" data-ru="Обо мне">Про мене</a>
+                <a href="#portfolio" class="nav-link" data-ua="Портфоліо" data-en="Portfolio"
+                    data-ru="Портфолио">Портфоліо</a>
+                <a href="#contact" class="nav-link" data-ua="Контакти" data-en="Contact" data-ru="Контакты">Контакти</a>
+            </div>
+            <div class="lang">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+                <button class="lang-btn active" data-lang="ua">UA</button>
+            </div>
+        </div>
+    </nav>
+
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <main class="container">
+        <section id="hero" class="hero">
+            <h1 class="hero-title" data-ua="Привіт — я Михайло." data-en="Hi — I'm Mykhailo."
+                data-ru="Привет — я Михаил.">Привіт — я Михайло.</h1>
+            <p class="hero-sub" data-ua="Fullstack розробник, 17 років, студент Комп'ютерної інженерії."
+                data-en="Fullstack developer, 17 y.o., Computer Engineering student."
+                data-ru="Fullstack разработчик, 17 лет, студент Компьютерной инженерии.">Fullstack розробник, 17 років,
+                студент Комп'ютерної інженерії.</p>
+            <a href="#about" class="cta" data-ua="Детальніше" data-en="Learn more" data-ru="Подробнее">Детальніше</a>
+        </section>
+
+        <section id="about" class="card" aria-labelledby="about-title">
+            <h2 id="about-title" data-ua="Про мене" data-en="About" data-ru="Обо мне">Про мене</h2>
+            <p data-ua="Я студент коледжу спеціальності «Комп'ютерна інженерія». Мені 17 років. Займаюсь Fullstack розробкою. Партнер ТОВ «НафтоРинок» (з 2025 року). Рівень англійської — C1."
+                data-en="I am a college student studying Computer Engineering. I'm 17 years old. I do Fullstack development. Partner at NaftoRynok LLC (since 2025). English level — C1."
+                data-ru="Я студент колледжа по специальности «Компьютерная инженерия». Мне 17 лет. Занимаюсь Fullstack разработкой. Партнёр ООО «НафтоРинок» (с 2025 года). Уровень английского — C1.">
+                Я студент коледжу спеціальності «Комп'ютерна інженерія». Мені 17 років. Займаюсь Fullstack розробкою.
+                Партнер ТОВ «НафтоРинок» (з 2025 року). Рівень англійської — C1.</p>
+            <div class="bio-grid">
+                <div class="bio-card card">
+                    <div style="display:inline-flex; align-items:center; gap:8px; justify-content: center;">
+                        <i class="fa-solid fa-flask"></i>
+                        <h3 data-ua="Про досвід" data-en="Experience" data-ru="Опыт">Про досвід</h3>
+                    </div>
+
+                    <p data-ua="Вивчаю інформаційні технології з дитинства (приблизно з 10 років). Маю досвід створення десктоп-додатків на C#; основний фокус — веб (Node.js, HTML/CSS)."
+                        data-en="I code since early years (around 10). Experience with desktop apps in C#; main focus is web (Node.js, HTML/CSS)."
+                        data-ru="Пишу код с ранних лет (примерно с 10). Есть опыт создания десктоп-приложений на C#; основной фокус — веб (Node.js, HTML/CSS).">
+                        Пишу код з дитинства (приблизно з 10 років). Маю досвід створення десктоп-додатків на C#;
+                        основний фокус — веб (Node.js, HTML/CSS).</p>
+                </div>
+                <div class="bio-card card">
+                    <div style="display:inline-flex; align-items:center; gap:8px; justify-content: center;">
+                        <i class="fa-solid fa-users"></i>
+                        <h3 data-ua="Управління спільнотами" data-en="Community Management"
+                            data-ru="Управление сообществами">Управління спільнотами</h3>
+                    </div>
+
+                    <p data-ua="Маю досвід модерації та організації великих інтернет-спільнот — чати 500+ учасників (модерація, організація)."
+                        data-en="Experience moderating and organizing large online communities — chats with 500+ members."
+                        data-ru="Есть опыт модерации и организации больших интернет-сообществ — чаты 500+ участников.">
+                        Маю досвід модерації та організації великих інтернет-спільнот — чати 500+ учасників (модерація,
+                        організація).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card" aria-labelledby="skills-title">
+            <h2 id="skills-title" data-ua="Навички" data-en="Skills" data-ru="Навыки">Навички</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon-abstract"
+                        style="display:inline-flex; align-items:center; gap:8px; justify-content: center;">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        <h3 data-ua="Fullstack" data-en="Fullstack" data-ru="Fullstack">Fullstack</h3>
+                    </div>
+                    <p data-ua="Більше 3-х років досвіду роботи з Node.js та бібліотеками Express.js, Socket.IO, HTTP/HTTPS, JWT, Multer, cookie, cors, MySQL (а також SQLite). Великий досвід DevOps — налаштування Linux систем, Nginx, MySQL server, Apache, systemd."
+                        data-en="More than 3 years of experience working with Node.js and libraries like Express.js, Socket.IO, HTTP/HTTPS, JWT, Multer, cookie, cors, MySQL (and also SQLite). Great experience in DevOps — setting up Linux systems, Nginx, MySQL server, Apache, systemd."
+                        data-ru="Больше 3-х лет опыта работы с Node.js и библиотеками Express.js, Socket.IO, HTTP/HTTPS, JWT, Multer, cookie, cors, MySQL (а также SQLite). Большой опыт DevOps — настройка Linux систем, Nginx, MySQL server, Apache, systemd.">
+                        Більше 3-х років досвіду роботи з Node.js та бібліотеками Express.js, Socket.IO, HTTP/HTTPS,
+                        JWT, Multer, cookie, cors, MySQL (а також SQLite). Великий досвід DevOps — налаштування Linux
+                        систем, Nginx, MySQL server, Apache, systemd.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-abstract"
+                        style="display:inline-flex; align-items:center; gap:8px; justify-content: center;">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3 data-ua="Frontend" data-en="Frontend" data-ru="Frontend">Фронтенд</h3>
+                    </div>
+                    <p data-ua="HTML, CSS, адаптивна верстка. Є досвід роботи з Bootstrap, Tailwind. JavaScript stock: jQuery, socket.io. Технології захищеної авторизації з Cookie."
+                        data-en="HTML, CSS, responsive layout. Have experience with Bootstrap and Tailwind. JavaScript stock: jQuery, socket.io. Technologies for secure authentication with cookies."
+                        data-ru="HTML, CSS, адаптивная верстка. Есть опыт работы с Bootstrap и Tailwind. JavaScript stock: jQuery, socket.io. Технологии защищенной авторизации с Cookie.">
+                        HTML, CSS, адаптивна верстка. Є досвід роботи з Bootstrap, Tailwind. JavaScript stock: jQuery,
+                        socket.io. Технології захищеної авторизації з Cookie.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-abstract"
+                        style="display:inline-flex; align-items:center; gap:8px; justify-content: center;">
+                        <i class="fa-solid fa-display"></i>
+                        <h3 data-ua="Desktop Development" data-en="Desktop Development" data-ru="Desktop Development">
+                            Десктоп</h3>
+                    </div>
+                    <p data-ua="C# / .NET — створення Desktop програм (WinForms). Є досвід роботи з WPF, Entity Framework, WebSocket."
+                        data-en="C# / .NET — creating Desktop applications (WinForms). Have experience with WPF, Entity Framework, WebSocket."
+                        data-ru="C# / .NET — создание Desktop приложений (WinForms). Есть опыт работы с WPF, Entity Framework, WebSocket.">
+                        C# / .NET — створення Desktop програм (WinForms). Є досвід роботи з WPF, Entity Framework,
+                        WebSocket.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="card" aria-labelledby="portfolio-title">
+            <h2 id="portfolio-title" data-ua="Портфоліо" data-en="Portfolio" data-ru="Портфолио">Портфоліо</h2>
+            <div class="projects">
+                <article class="project">
+                    <div class="thumb icon-abstract"><img src="./assets/nafta.svg" alt="Nafta project"
+                            class="project-icon" style="width:64px;height:64px;display:block;margin:auto"></div>
+                    <h3 data-ua="Проект: АЗС Року 2025-2026" data-en="Project: Fuel Station of the Year 2025-2026"
+                        data-ru="Проект: АЗС года 2025-2026">
+                        Проект: АЗС Року 2025-2026
+                    </h3>
+                    <p data-ua="Конкурс АЗС, організований ТОВ «НафтоРинок». Конкурс 2025 року полягав в заповненні участниками анкет через Telegram бот. Оцінювання здійснювалось на спецільному Web-сайті. Проект здійсненний на базі Node.js, Express.js, MySQL, та node-telegram-bot-api. Конкурс 2026 року буде проходити повністю с помощью Web-сайта."
+                        data-en="Competition for all Ukrainian Fuel Stations organized by NaftoRynok LLC. The 2025 competition involved participants filling out questionnaires via a Telegram bot. Evaluation was carried out on a special website. The project is based on Node.js, Express.js, MySQL, and node-telegram-bot-api. The 2026 competition will be held entirely through the website."
+                        data-ru="Конкурс АЗС, организованный ООО «НафтоРинок». Конкурс 2025 года заключался в заполнении участниками анкет через Telegram бот. Оценивание осуществлялось на специальном веб-сайте. Проект реализован на базе Node.js, Express.js, MySQL и node-telegram-bot-api. Конкурс 2026 года будет проходить полностью с помощью веб-сайта.">
+                        Конкурс АЗС, організований ТОВ «НафтоРинок». Конкурс 2025 року полягав в заповненні участниками
+                        анкет через Telegram бот. Оцінювання здійснювалось на спецільному Web-сайті. Проект здійсненний
+                        на базі Node.js, Express.js, MySQL, та node-telegram-bot-api. Конкурс 2026 року буде проходити
+                        повністю с помощью Web-сайта.
+                        <br> 123123
+                    </p>
+                </article>
+                <hr class="art-hr">
+                <article class="project">
+                    <div class="thumb icon-abstract">
+                        <i class="fa-solid fa-code" style="color:#FF4D4D"></i>
+                    </div>
+                    <h3 data-ua="Проект: Термінал для державних служб США (Signal CAD)"
+                        data-en="Project: Mobile Data Terminal (Computer Aided Dispatch) (Signal CAD)"
+                        data-ru="Проект: Терминал для государственных служб США (Signal CAD)">
+                        Проект: Термінал для державних служб США (Signal CAD)
+                    </h3>
+                    <p data-ua="Web-сервіс, створений для Full RolePlay спілки в комп'ютерній грі GTA V (FiveM). Сервіс допомагае збирати усю інформацію з активних офіцерів в грі, громадян, рятувальників, та допомагає организовувати диспетчерам координацію. Сервіс повністю зв'язаний з ігровим сервером (за допомогою LUA скріптів). Є відслідковування знаходження гравців на мапі (технологія LiveMap). Основні технології: Node.js, Express.js, Socket.IO, MySQL, HTML/CSS, JavaScript."
+                        data-en="Web service created for the Full RolePlay community in the computer game GTA V (FiveM). The service helps collect all information from active officers in the game, citizens, rescuers, and helps dispatchers organize coordination. The service is fully integrated with the game server (using LUA scripts). There is player location tracking on the map (LiveMap technology). Main technologies: Node.js, Express.js, Socket.IO, MySQL, HTML/CSS, JavaScript."
+                        data-ru="Web-сервис, созданный для сообщества Full RolePlay в компьютерной игре GTA V (FiveM). Сервис помогает собирать всю информацию от активных офицеров в игре, граждан, спасателей и помогает диспетчерам организовать координацию. Сервис полностью интегрирован с игровым сервером (с использованием LUA скриптов). Есть отслеживание местоположения игроков на карте (технология LiveMap). Основные технологии: Node.js, Express.js, Socket.IO, MySQL, HTML/CSS, JavaScript.">
+                        Web-сервіс, створений для Full RolePlay спілки в комп'ютерній грі GTA V (FiveM). Сервіс
+                        допомагае збирати усю інформацію з активних офіцерів в грі, громадян, рятувальників, та
+                        допомагає организовувати диспетчерам координацію. Сервіс повністю зв'язаний з ігровим сервером
+                        (за допомогою LUA скріптів). Є відслідковування знаходження гравців на мапі (технологія
+                        LiveMap). Основні технології: Node.js, Express.js, Socket.IO, MySQL, HTML/CSS, JavaScript.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="card" aria-labelledby="gallery-title">
+            <h2 id="gallery-title" data-ua="Галерея робіт" data-en="Gallery of my works" data-ru="Галерея работ">Галерея</h2>
+            <div class="carousel" id="carousel">
+                <button class="carousel-btn prev" aria-label="Назад">
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    <span class="sr-only" data-ua="Назад" data-en="Prev" data-ru="Назад">Назад</span>
+                </button>
+                <div class="carousel-track-wrapper">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="./assets/gallery/8.png" alt="Photo 1"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/7.png" alt="Photo 2"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/6.png" alt="Photo 3"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/5.png" alt="Photo 4"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/1.png" alt="Photo 5"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/2.png" alt="Photo 6"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/4.png" alt="Photo 7"></li>
+                        <li class="carousel-slide"><img src="./assets/gallery/3.png" alt="Photo 8"></li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next" aria-label="Вперед">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    <span class="sr-only" data-ua="Вперед" data-en="Next" data-ru="Вперед">Вперед</span>
+                </button>
+                <div class="carousel-dots" aria-hidden="false"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="card" aria-labelledby="contact-title">
+            <h2 id="contact-title" data-ua="Контакти" data-en="Contact" data-ru="Контакты">Контакти</h2>
+            <p data-ua="Зв'яжіться зі мною по пошті pausedev12@gmail.com або залиште заявку нижче."
+                data-en="Contact me at pausedev12@gmail.com or leave a request below."
+                data-ru="Свяжитесь со мной по почте pausedev12@gmail.com или оставьте заявку ниже.">Зв'яжіться зі мною
+                по пошті pausedev12@gmail.com або залиште заявку нижче.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <label>
+                    <span data-ua="Ім'я" data-en="Name" data-ru="Имя">Ім'я</span>
+                    <input type="text" name="name" id="name" required data-ua="Введіть ім'я" data-en="Enter your name"
+                        data-ru="Введите имя" placeholder="Введіть ім'я">
+                </label>
+                <label>
+                    <span data-ua="Telegram" data-en="Telegram" data-ru="Telegram">Telegram</span>
+                    <input type="text" name="tg" id="tg" required data-ua="Telegram або посилання"
+                        data-en="Telegram or link" data-ru="Telegram или ссылка" placeholder="Telegram або посилання">
+                </label>
+                <label>
+                    <span data-ua="Опис" data-en="Short description" data-ru="Краткое описание">Опис</span>
+                    <textarea name="desc" id="desc" rows="4" data-ua="Коротко про запит"
+                        data-en="Briefly describe your request" data-ru="Кратко опишите запрос"
+                        placeholder="Коротко про запит"></textarea>
+                </label>
+                <div class="form-actions">
+                    <button type="submit" class="btn" id="send-btn" data-ua="Відправити" data-en="Send"
+                        data-ru="Отправить">Відправити</button>
+                    <div id="form-msg" class="form-msg" aria-live="polite"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small data-ua="© 2026 Михайло Денисенко" data-en="© 2026 Mykhailo Denysenko"
+            data-ru="© 2026 Михаил Денисенко">© 2026 Михайло Денисенко</small>
+    </footer>
+
+</body>
+
+</html>
