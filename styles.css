@@ -182,7 +182,6 @@ a:focus {
     outline-offset: 2px
 }
 
-/* Expanded sections */
 .bio-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -277,7 +276,6 @@ a:focus {
     box-shadow: 0 6px 18px rgba(11, 24, 39, 0.03)
 }
 
-/* Carousel styles */
 .carousel {
     display: flex;
     align-items: center;
