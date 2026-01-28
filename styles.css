@@ -110,7 +110,8 @@ body {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
-    padding: 60px 20px
+    padding: 60px 20px;
+    padding-top:150px; padding-bottom:280px;
 }
 
 .hero-title {
@@ -169,7 +170,8 @@ body {
     }
 
     .hero {
-        padding: 40px 12px
+        padding: 40px 12px;
+        padding-top:150px; padding-bottom:280px;
     }
 }
 
