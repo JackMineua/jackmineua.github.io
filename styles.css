@@ -144,7 +144,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
@@ -172,6 +172,10 @@ body {
     .hero {
         padding: 40px 12px;
         padding-top:150px; padding-bottom:280px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -223,12 +227,6 @@ a:focus {
 
 .bio-card h3 {
     margin: 0 0 6px 0
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px
 }
 
 .project {
