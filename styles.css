@@ -505,3 +505,76 @@ a:focus {
         grid-template-columns: 1fr
     }
 }
+
+:root {
+    --accent: #FF4D4D;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(15, 23, 42, 0.08); 
+    --section-spacing: 100px; 
+}
+
+.card, .project, .skill-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border); 
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
+    border-radius: 16px;
+    animation: fadeInUp 0.8s ease backwards;
+}
+
+.card:hover, .project:hover, .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    border-color: var(--accent); 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+section {
+    padding: var(--section-spacing) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero {
+    min-height: 90vh; 
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+}
+
+.projects, .skills-grid, .bio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title { animation-delay: 0.1s; }
+.hero-sub { animation-delay: 0.2s; }
+.cta { animation-delay: 0.3s; }
+
+@media (max-width: 720px) {
+    :root {
+        --section-spacing: 60px;
+    }
+    .hero {
+        min-height: 80vh;
+    }
+}
+
+#contact {
+    padding: 20px 20px !important;
+    min-height: auto !important;
+}
